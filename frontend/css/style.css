@@ -7,6 +7,10 @@ h1 {
     padding: 40px 0 17px 0;
 }
 
+nav {
+    position: relative;
+}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
@@ -17,17 +21,15 @@ nav ul li {
     list-style: none;
 }
 
-header {
-    background-image: url(../../img/banner.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
+
+header img {
+    position: absolute;
 }
 
 .headerDescription {
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 .headerDescription p {
@@ -42,7 +44,6 @@ header {
     padding: 10px;
     margin-right: 25px;
 }
-
 
 /*NOUS CONTACTER*/
 
