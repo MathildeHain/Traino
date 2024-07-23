@@ -72,17 +72,15 @@ header video {
 }
 
 .headerDescription {
-    padding: 20px 0;
+   color: white;
+   height: 60%;
+    align-content: center;
     text-align: center;
-    position: relative;
-    z-index: -1;
 }
 
 .headerDescription p {
-    height: 30%;
-    align-content: center;
-    text-align: center;
-    padding: 90px 0 20px 0;
+    font-size: 29px;
+    padding: 0 38px;
 }
 
 .headerDescription button {
@@ -106,6 +104,6 @@ iframe {
 
 
 /*FONTS*/
-h1 {
+h1, .headerDescription p {
     font-family: 'Freehand', Arial, Helvetica, sans-serif;
 }
