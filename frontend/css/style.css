@@ -4,7 +4,7 @@
 
 h1 {
     font-size: 35px !important;
-    opacity: .7;
+    
     color: white !important;
 }
 
@@ -23,7 +23,7 @@ nav ul li {
 }
   
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler:focus, .navbar-toggler:focus{
@@ -31,9 +31,33 @@ nav ul li {
 }
 /*FIN ICONE DE NAVIGATION*/
 
+
+
+/*LIENS DE NAVIGATION*/
 .navbar-nav {
-    
+    --bs-navbar-color: rgb(255 255 255);
 }
+/*FIN LIENS DE NAVIGATION*/
+
+
+
+/*AFFICHAGE DE LIENS EN PLEIN ECRAN*/
+.navbar-collapse {
+    background-color: #3e4149;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+.navbar-toggler, h1 {
+    z-index: 1;
+}
+/*FIN*/
 
 header {
     height: 100vh;
@@ -44,12 +68,14 @@ header video {
     height: 100vh;
     width: 100%;
     object-fit: cover;
+    z-index: -2;
 }
 
 .headerDescription {
     padding: 20px 0;
     text-align: center;
     position: relative;
+    z-index: -1;
 }
 
 .headerDescription p {
@@ -66,6 +92,9 @@ header video {
 }
 
 /*NOTRE EQUIPE*/
+.notreEquipe img{
+max-width: 100%;
+}
 
 
 /*NOUS CONTACTER*/
