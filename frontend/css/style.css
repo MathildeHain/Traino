@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0 17px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 40px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+header {
+    background-image: url(../../img/banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 58vh;
+}
+
+header p {
+    height: 30%;
+    align-content: center;
+    text-align: center;
+}
+
+
+/*NOUS CONTACTER*/
+
+iframe {
+    max-width: 100%;
+}
