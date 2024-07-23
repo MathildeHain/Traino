@@ -3,22 +3,36 @@
 }
 
 h1 {
-    text-align: center;
-    padding: 40px 0 17px 0;
+    font-size: 35px !important;
+    opacity: .7;
+    color: white !important;
 }
 
 nav {
     position: relative;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 40px;
+    padding: 30px !important;
 }
 
 nav ul li {
     list-style: none;
+}
+
+/*ICONE DE NAVIGATION*/
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+  
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus, .navbar-toggler:focus{
+    box-shadow: none !important;
+}
+/*FIN ICONE DE NAVIGATION*/
+
+.navbar-nav {
+    
 }
 
 header {
@@ -65,5 +79,4 @@ iframe {
 /*FONTS*/
 h1 {
     font-family: 'Freehand', Arial, Helvetica, sans-serif;
-    font-size: 40px;
 }
