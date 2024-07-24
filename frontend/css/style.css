@@ -1,147 +1,181 @@
+/*GENERAL*/
 * {
     margin: 0;
 }
+    /*Polices de caractères Google Fonts*/
+    h1 {
+        font-family: 'Freehand', Arial, Helvetica, sans-serif;
+    }
 
+    h2, .headerDescription p, #aPropos p, #aPropos button {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    }
+    /*Fin*/
+/*FIN GENERAL*/
+
+
+
+/*TITRES*/
 h1 {
     font-size: 35px !important;
     
     color: white !important;
 }
-
-nav {
-    position: relative;
-    padding: 30px !important;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-/*ICONE DE NAVIGATION*/
-.custom-toggler.navbar-toggler {
-    border: none;
-}
-  
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler:focus, .navbar-toggler:focus{
-    box-shadow: none !important;
-}
-/*FIN ICONE DE NAVIGATION*/
+/*FIN TITRES*/
 
 
 
-/*LIENS DE NAVIGATION*/
-.navbar-nav {
-    --bs-navbar-color: rgb(255 255 255);
-}
-/*FIN LIENS DE NAVIGATION*/
+/*NAVIGATION*/
+    /*Général*/
+    nav {
+        position: relative;
+        padding: 30px !important;
+    }
+    /*Fin*/
+
+    /*Liens de navigation*/
+    nav ul li {
+        list-style: none;
+    }
+    .navbar-nav {
+        --bs-navbar-color: rgb(255 255 255);
+    }
+    /*Affichage en plein écran*/
+    .navbar-collapse {
+        background-color: #3e4149;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar-toggler, h1 {
+        z-index: 1;
+    }
+    /*Fin*/
+
+    /*Toggler icon navigation*/
+    .custom-toggler.navbar-toggler {
+        border: none;
+    }
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .custom-toggler:focus, .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    /*Fin*/
+/*FIN NAVIGATION*/
 
 
+/*HEADER*/
+    /*Général*/
+    header {
+        height: 100vh;
+    }
+    /*Fin*/
 
-/*AFFICHAGE DE LIENS EN PLEIN ECRAN*/
-.navbar-collapse {
-    background-color: #3e4149;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-.navbar-toggler, h1 {
-    z-index: 1;
-}
-/*FIN*/
+    /*Vidéo*/
+    header video {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+    /*Fin*/
 
-header {
-    height: 100vh;
-}
-
-header video {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
-
-.headerDescription {
-   color: white;
-   height: 60%;
+    /*Description*/
+    .headerDescription {
+    color: white;
+    height: 60%;
     align-content: center;
     text-align: center;
-}
+    padding-top: 50px;
+    }
+        /*Paragraphe*/
+        .headerDescription p {
+            font-size: 29px;
+            padding: 0 50px;
+        }
+        /*Bouton Voir la carte*/
+        .buttonHeaderDescription {
+            padding-bottom: 60px;
+        }
+        .buttonHeaderDescription button {
+            width: 33%;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        /*Icône Font Awesome*/
+        .headerDescription i {
+            font-size: 30px;
+            color: white;
+        }
+    /*Fin*/
+/*FIN HEADER*/
 
-.headerDescription p {
-    font-size: 29px;
-    padding: 0 50px;
-}
 
-.headerDescription i {
-    font-size: 30px;
-    color: white;
-}
-
-.buttonsHeaderDescription {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 60px;
-}
-
-.buttonsHeaderDescription button {
-    width: 33%;
-}
 
 /*NOTRE HISTOIRE*/
-#aPropos {
-    padding: 57px;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    /*Général*/
+    #aPropos {
+        padding: 57px;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Fin*/
 
-#aPropos p:nth-child(1) {
-    font-size: 11px;
-}
+    /*Phrase d'en-tête*/
+    #aPropos p:nth-child(1) {
+        font-size: 11px;
+    }
+    /*Fin*/
 
-#aPropos p:nth-child(0n+3) {
-    line-height: 30px;
-}
+    /*Titre*/
+    #aPropos h2 {
+        padding: 7px 0 20px 0;
+    }
+    /*Fin*/
 
-#aPropos h2 {
-    padding: 7px 0 20px 0;
-}
+    /*Paragraphe*/
+    #aPropos p:nth-child(0n+3) {
+        line-height: 30px;
+    }
+    /*Fin*/
 
-#aPropos button {
-    transform: translateY(100%);
-}
+    /*Boutons*/
+    #aPropos button {
+        transform: translateY(100%);
+    }
+    /*Fin*/
+/*FIN NOTRE HISTOIRE*/
+
+
 
 /*NOTRE EQUIPE*/
-.notreEquipe img{
-max-width: 100%;
-}
+    /*Images*/
+    .notreEquipe img{
+    max-width: 100%;
+    }
+    /*Fin*/
+/*FIN NOTRE EQUIPE*/
+
 
 
 /*NOUS CONTACTER*/
-
-iframe {
-    max-width: 100%;
-}
-
-
-
-/*FONTS*/
-h1, .headerDescription p {
-    font-family: 'Freehand', Arial, Helvetica, sans-serif;
-}
-
-h2, #aPropos p, #aPropos button {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
+    /*Carte Google Maps*/
+    iframe {
+        max-width: 100%;
+    }
+    /*Fin*/
+/*FIN NOUS CONTACTER*/
