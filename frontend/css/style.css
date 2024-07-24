@@ -105,7 +105,22 @@ header video {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+}
+
+#aPropos p:nth-child(1) {
+    font-size: 11px;
+}
+
+#aPropos p:nth-child(0n+3) {
+    line-height: 30px;
+}
+
+#aPropos h2 {
+    padding: 7px 0 20px 0;
+}
+
+#aPropos button {
+    transform: translateY(100%);
 }
 
 /*NOTRE EQUIPE*/
