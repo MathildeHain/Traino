@@ -107,13 +107,19 @@ h1 {
             padding-bottom: 60px;
         }
         .buttonHeaderDescription button {
-            width: 33%;
+            width: 40%;
             background: transparent;
             border: 2px solid white;
             color: white;
-            padding: 15px;
+            padding: 10px 0;
             margin-top: 20px;
+            transition: all 1s;
         }
+        .buttonHeaderDescription button:focus {
+            background-color: white;
+            color: black;
+        }
+
         /*Icône Font Awesome*/
         .headerDescription i {
             font-size: 30px;
