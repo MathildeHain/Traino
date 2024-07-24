@@ -83,10 +83,23 @@ header video {
     padding: 0 38px;
 }
 
-.headerDescription button {
-    width: 100px;
-    padding: 10px;
-    margin-right: 25px;
+.headerDescription a {
+
+}
+
+.headerDescription i {
+    font-size: 30px;
+    color: white;
+}
+
+.buttonsHeaderDescription {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+}
+
+.buttonsHeaderDescription button {
+    width: 33%;
 }
 
 /*NOTRE EQUIPE*/
