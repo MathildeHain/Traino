@@ -136,8 +136,20 @@ h1 {
     #nosServices {
         text-align: center;
         padding: 57px 20px 0 20px;
+        height: 100vh;
     }
     /*Fin*/
+
+    /*Phrase d'en tête*/
+    #nosServices p:nth-child(1) {
+        font-size: 11px;
+    }
+    /*Fin*/
+
+    /*Titre*/
+    #nosServices h2 {
+        padding: 7px 0 20px 0;
+    }
 
     /*Carousel*/
     .carousel h3 {
