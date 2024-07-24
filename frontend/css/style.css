@@ -80,11 +80,7 @@ header video {
 
 .headerDescription p {
     font-size: 29px;
-    padding: 0 38px;
-}
-
-.headerDescription a {
-
+    padding: 0 50px;
 }
 
 .headerDescription i {
@@ -100,6 +96,16 @@ header video {
 
 .buttonsHeaderDescription button {
     width: 33%;
+}
+
+/*NOTRE HISTOIRE*/
+#aPropos {
+    padding: 57px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /*NOTRE EQUIPE*/
@@ -119,4 +125,8 @@ iframe {
 /*FONTS*/
 h1, .headerDescription p {
     font-family: 'Freehand', Arial, Helvetica, sans-serif;
+}
+
+h2, #aPropos p, #aPropos button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
