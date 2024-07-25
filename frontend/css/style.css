@@ -153,11 +153,28 @@ h1 {
     /*Fin*/
 
     /*Titre*/
-
+    .nosServicesHeading {
+        padding-top: 30px;
+    }
+    .carousel-indicators {
+        top: 104%;
+    }
+    .carousel-inner p {
+        padding: 0 30px;
+    }
     /*Fin*/
 
-    /*Carousel*/
-    
+    /*Bouton*/
+    .carousel-item button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 30px;
+    }
+    .carousel-item button:hover {
+        background-color: white;
+        color: black;
+    }
     /*Fin*/
 
     /*Test*/
@@ -168,10 +185,11 @@ h1 {
         background-size : cover;
         min-height: 80vh;
         position: absolute;
-        top: -10%;
+        top: 10%;
         right: 0;
         z-index: -1;
         width: 75%;
+        opacity: .8;
     }
     /*Fin*/
 /*FIN NOS SERVICES*/
