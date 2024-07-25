@@ -143,6 +143,7 @@ h1 {
         position: relative;
         z-index: 0;
         padding-left: 30px;
+        align-content: center;
     }
     /*Fin*/
 
@@ -186,6 +187,11 @@ h1 {
     }
     /*Fin*/
 
+    /*Carousel*/
+    .carousel-item {
+        height: 300px;
+    }
+
     /*Test*/
     .test {
         background-image: url(../../img/pexels-george-dolgikh-551816-1303081\ \(1\).jpg);
@@ -202,17 +208,18 @@ h1 {
     }
     
     .hamburger {
-        background-image: url(../../img/Design\ sans\ titre.png);
-        background-position : center;
-        background-repeat : no-repeat;
-        background-size : cover;
-        min-height: 50vh;
+        background-image: url(../../img/burger.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 17vh;
         position: absolute;
-        top: 20%;
-        right: 0;
+        top: 43%;
+        left: 41%;
         z-index: -1;
         width: 75%;
         opacity: .8;
+        transform: scale(5.5);
     }
     /*Fin*/
 /*FIN NOS SERVICES*/
