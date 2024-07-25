@@ -95,7 +95,6 @@ h1 {
     height: 60%;
     align-content: center;
     text-align: center;
-    padding-top: 50px;
     }
         /*Paragraphe*/
         .headerDescription p {
@@ -134,9 +133,16 @@ h1 {
 /*NOS SERVICES*/
     /*Général*/
     #nosServices {
+        background-image: url(../../img/bgCarouselServices.png);
+        background-attachment: fixed;
+        background-position : center;
+        background-repeat : no-repeat;
+        background-size : cover;
+        min-height: 100vh;
+        color: white;
+        position: relative;
+        z-index: 0;
         text-align: center;
-        padding: 57px 20px 0 20px;
-        height: 100vh;
     }
     /*Fin*/
 
@@ -147,19 +153,25 @@ h1 {
     /*Fin*/
 
     /*Titre*/
-    #nosServices h2 {
-        padding: 7px 0 20px 0;
-    }
+
+    /*Fin*/
 
     /*Carousel*/
-    .carousel h3 {
-        padding: 10px 0;
-    }
-    .carousel-item {
-        height: 320px;
-    }
-    .carousel-item p {
-        margin-bottom: 50px;
+    
+    /*Fin*/
+
+    /*Test*/
+    .test {
+        background-image: url(../../img/pexels-george-dolgikh-551816-1303081\ \(1\).jpg);
+        background-position : center;
+        background-repeat : no-repeat;
+        background-size : cover;
+        min-height: 80vh;
+        position: absolute;
+        top: -10%;
+        right: 0;
+        z-index: -1;
+        width: 75%;
     }
     /*Fin*/
 /*FIN NOS SERVICES*/
