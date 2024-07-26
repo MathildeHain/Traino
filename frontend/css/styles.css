@@ -46,10 +46,12 @@ header .description {
 ----------*/
 main {
   position: absolute;
-  background-image: url("../../../frontend/assets/img/bgCarouselServices.png");
+  background-image: url(../../../frontend/assets/img/bgCarouselServices.png);
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   top: 100vh;
   color: white;
   /*Bloc*/
@@ -78,13 +80,17 @@ main #carouselServices .carousel-indicators {
 }
 main .bgServices {
   background-image: url(../../../frontend/assets/img/wood.png);
-  height: 70vh;
   position: relative;
-  background-repeat: no-repeat;
   width: 75%;
+  height: 70vh;
   box-shadow: 0 0 100px black;
   top: 15%;
   left: 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 main .carrot {
   background-image: url(../../../frontend/assets/img/hamburger.png);
