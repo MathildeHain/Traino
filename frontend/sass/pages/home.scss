@@ -45,7 +45,7 @@ header {
 main {
     width: 100%;
     position: absolute;
-    background-image: url('../../../frontend/assets/img/bgCarouselServices.png');
+    background-image: url(../assets/img/bgCarouselServices.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ main {
         }
         /*Background*/
         .bgServices {
-            background-image: url(../../../frontend/assets/img/wood.png);
+            background-image: url(../assets/img/wood.png);
             height: 70vh;
             position: relative;
             background-repeat: no-repeat;
@@ -90,7 +90,7 @@ main {
 
     /*Notre histoire*/
     #about {
-        background-image: url(../../../frontend/assets/img/bg2.png);
+        background-image: url(../assets/img/bg2.png);
         
     }
 }

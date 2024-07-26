@@ -48,7 +48,7 @@ header .description {
 main {
   width: 100%;
   position: absolute;
-  background-image: url("../../../frontend/assets/img/bgCarouselServices.png");
+  background-image: url(../assets/img/bgCarouselServices.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -81,7 +81,7 @@ main #carouselServices .carousel-indicators {
   margin: 0;
 }
 main .bgServices {
-  background-image: url(../../../frontend/assets/img/wood.png);
+  background-image: url(../assets/img/wood.png);
   height: 70vh;
   position: relative;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ main .bgServices {
   left: 25%;
 }
 main #about {
-  background-image: url(../../../frontend/assets/img/bg2.png);
+  background-image: url(../assets/img/bg2.png);
 }
 
 /*-----------
