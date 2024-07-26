@@ -46,7 +46,7 @@ header .description {
 ----------*/
 main {
   position: absolute;
-  background-image: url(../../../frontend/assets/img/bgCarouselServices.png);
+  background-image: url("../../../frontend/assets/img/bgCarouselServices.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
@@ -70,6 +70,9 @@ main .blocChild__services {
   padding: 25px;
   top: -54%;
   position: relative;
+}
+main .bgServices {
+  width: 100%;
 }
 main #services {
   text-align: center;

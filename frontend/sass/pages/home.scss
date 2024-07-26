@@ -43,7 +43,7 @@ header {
                                                         ----------*/
 main {
     position: absolute;
-    background-image: url(../../../frontend/assets/img/bgCarouselServices.png);
+    background-image: url('../../../frontend/assets/img/bgCarouselServices.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -o-background-size: cover;
@@ -61,6 +61,9 @@ main {
         padding: 25px;
         top: -54%;
         position: relative;
+    }
+    .bgServices {
+        width: 100%;
     }
 
     /*Services*/
