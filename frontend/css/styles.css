@@ -82,7 +82,7 @@ main #carouselServices .carousel-indicators {
   margin: 0;
 }
 main .bgServices {
-  background-image: url(/frontend/img/wood.png);
+  background-color: aqua;
   position: relative;
   width: 75%;
   height: 70vh;
