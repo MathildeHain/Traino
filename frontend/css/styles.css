@@ -46,7 +46,7 @@ header .description {
 ----------*/
 main {
   position: absolute;
-  background-image: url(/img/bgCarouselServices.png);
+  background-image: url("../../../frontend/assets/img/bgCarouselServices.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
@@ -82,7 +82,7 @@ main #carouselServices .carousel-indicators {
   margin: 0;
 }
 main .bgServices {
-  background-color: aqua;
+  background-image: url(../assets/img/wood.png);
   position: relative;
   width: 75%;
   height: 70vh;
@@ -96,7 +96,7 @@ main .bgServices {
   -webkit-background-size: cover;
 }
 main .carrot {
-  background-image: url(/img/carrot.png);
+  background-image: url(../../../frontend/assets/img/hamburger.png);
   height: 113px;
   position: relative;
   top: -120%;
@@ -106,7 +106,7 @@ main .carrot {
   width: 26%;
 }
 main #about {
-  background-image: url(/img/bg2.png);
+  background-image: url(../../../frontend/assets/img/bg2.png);
 }
 
 /*-----------
