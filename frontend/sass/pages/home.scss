@@ -13,6 +13,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    position: absolute;
     /*Vidéo*/
     video {
         height: 100vh;
@@ -42,13 +43,12 @@ header {
                                                             Main
                                                         ----------*/
 main {
+    width: 100%;
     position: absolute;
-    background-image: url(../assets/img/bgCarouselServices.png);
+    background-image: url('../../../frontend/assets/img/bgCarouselServices.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
     top: 100vh;
     color: white;
     /*Bloc*/
@@ -57,13 +57,10 @@ main {
         max-height: 100vh;
     }
     
-    .blocChild__services {
+    .blocChildServices {
         padding: 25px;
         top: -54%;
         position: relative;
-    }
-    .bgServices {
-        width: 100%;
     }
 
     /*Services*/
@@ -73,6 +70,7 @@ main {
         }
         /*Carousel*/
         #carouselServices {
+            top: -240px;
             .carousel-indicators {
                 top: 100%;
                 margin: 0;
@@ -80,33 +78,19 @@ main {
         }
         /*Background*/
         .bgServices {
-            background-image: url(../assets/img/wood.png);    
-            position: relative;
-            width: 75%;
+            background-image: url(../../../frontend/assets/img/wood.png);
             height: 70vh;
+            position: relative;
+            background-repeat: no-repeat;
+            width: 75%;
             box-shadow: 0 0 100px black;
             top: 15%;
             left: 25%;
-            background-repeat: no-repeat;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;  
-        }
-        /*Carrot*/
-        .carrot {
-            background-image: url(../assets/img/hamburger.png);
-            height: 113px;
-            position: relative;
-            top: -120%;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: contain;
-            width: 26%;
         }
 
     /*Notre histoire*/
     #about {
-        background-image: url(..assets/img/bg2.png);
+        background-image: url(../../../frontend/assets/img/bg2.png);
         
     }
 }
