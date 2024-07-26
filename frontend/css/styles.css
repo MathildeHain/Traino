@@ -96,7 +96,7 @@ main .bgServices {
   -webkit-background-size: cover;
 }
 main .carrot {
-  background-image: url(../../../frontend/assets/img/hamburger.png);
+  background-image: url(/img/wood.png);
   height: 113px;
   position: relative;
   top: -120%;
