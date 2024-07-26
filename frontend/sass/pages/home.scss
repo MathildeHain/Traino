@@ -43,7 +43,7 @@ header {
                                                         ----------*/
 main {
     position: absolute;
-    background-image: url('../../../frontend/assets/img/bgCarouselServices.png');
+    background-image: url(../assets/img/bgCarouselServices.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     -o-background-size: cover;
@@ -88,14 +88,13 @@ main {
             top: 15%;
             left: 25%;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             -o-background-size: cover;
             -moz-background-size: cover;
             -webkit-background-size: cover;  
         }
         /*Carrot*/
         .carrot {
-            background-image: url(../../../frontend/assets/img/hamburger.png);
+            background-image: url(../assets/img/hamburger.png);
             height: 113px;
             position: relative;
             top: -120%;
@@ -107,7 +106,7 @@ main {
 
     /*Notre histoire*/
     #about {
-        background-image: url(../../../frontend/assets/img/bg2.png);
+        background-image: url(..assets/img/bg2.png);
         
     }
 }
