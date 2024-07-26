@@ -48,7 +48,6 @@ main {
     background-image: url(../assets/img/bgCarouselServices.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     top: 100vh;
     color: white;
     /*Bloc*/
@@ -57,7 +56,7 @@ main {
         max-height: 100vh;
     }
     
-    .blocChildServices {
+    .blocChild__services {
         padding: 25px;
         top: -54%;
         position: relative;
@@ -70,7 +69,6 @@ main {
         }
         /*Carousel*/
         #carouselServices {
-            top: -240px;
             .carousel-indicators {
                 top: 100%;
                 margin: 0;
