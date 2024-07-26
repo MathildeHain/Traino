@@ -1,0 +1,118 @@
+                                        /*------------------------------------------------
+                                                        PAGE D'ACCUEIL
+                                        -------------------------------------------------*/
+
+                                                        /*------------
+                                                            HEADER
+                                                        ------------*/
+
+header {
+    /*Général*/
+    height: 100vh;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*Vidéo*/
+    video {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    /*Barre de navigation*/
+    nav {
+        background-color: transparent;
+        top: -100vh;
+        
+    }
+    /*Description*/
+    .description {
+        position: relative;
+        top: -70vh;
+        text-align: center;
+    }
+}
+
+
+                                                        /*----------
+                                                            Main
+                                                        ----------*/
+main {
+    position: absolute;
+    background-image: url('../../../frontend/assets/img/bgCarouselServices.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 100vh;
+    color: white;
+    /*Bloc*/
+    .bloc {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    
+    .blocChild__services {
+        padding: 25px;
+        top: -54%;
+        position: relative;
+    }
+
+    /*Services*/
+        /*Général*/
+        #services {
+            text-align: center;
+        }
+        /*Carousel*/
+        #carouselServices {
+            .carousel-indicators {
+                top: 100%;
+                margin: 0;
+            }
+        }
+        /*Background*/
+        .bgServices {
+            background-image: url(../../../frontend/assets/img/wood.png);
+            height: 70vh;
+            position: relative;
+            background-repeat: no-repeat;
+            width: 75%;
+            box-shadow: 0 0 100px black;
+            top: 15%;
+            left: 25%;
+        }
+        /*Carrot*/
+        .carrot {
+            background-image: url(../../../frontend/assets/img/hamburger.png);
+            height: 113px;
+            position: relative;
+            top: -120%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: contain;
+            width: 26%;
+        }
+
+    /*Notre histoire*/
+    #about {
+        background-image: url(../../../frontend/assets/img/bg2.png);
+        
+    }
+}
+
+
+                                                        /*-----------
+                                                            FOOTER
+                                                        ------------*/
+footer {
+    /*Général*/
+    position: absolute;
+    top: 400vh;
+    /*Carte Google Maps*/
+    iframe {
+        max-width: 100%;
+    }
+}

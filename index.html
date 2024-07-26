@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Restaurant Savoyard au coeur d'Avoriaz. Dégustation de plats sur place, en livraison ou à emporter. Possibilité de réserver une table.">
    
-    <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="./frontend/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <title>Le Traino</title>
@@ -18,10 +18,10 @@
 <body>
     <header>
         <video preload autoplay muted loop playsinline poster="">
-            <source src="./img/banner.mp4" type="video/mp4">
+            <source src="./frontend/assets/img/banner.mp4" type="video/mp4">
             Sorry, your browser does not support HTML5 video.
         </video>
-        <nav class="navbar navbar-expand-lg navbar-light --bs-navbar-toggler-icon-bg">
+        <nav class="navbar navbar-expand-lg --bs-navbar-toggler-icon-bg">
             <div class="container-fluid">
                 <h1 href="#">Le traino</h1>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">                
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </nav>
-        <div class="headerDescription">
+        <div class="description">
             <p>Restaurant Savoyard au coeur de la station d'Avoriaz</p>
             <div class="buttonHeaderDescription">
                 <button>Voir la carte</button>
@@ -55,117 +55,125 @@
     </header>
 
     <main>
-        <section id="nosServices">
-            <div class="nosServicesHeading">
-                <h2>NOS SERVICES</h2>
-            </div>
-            <div id="carouselServices" class="carousel slide" data-bs-ride="">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h3>Réserver une table</h3>
-                        <p>
-                            Ne laissez rien au hasard, réservez dès maintenant et préparez-vous à vivre une expérience gastronomique mémorable
-                            dans une ambiance accueillante et conviviale. <br> Votre table vous attend pour vous faire découvrir les délices
-                            de notre cuisine et vous offrir un moment de partage et de plaisir.
-                        </p>
-                        <button>Voir le menu</button>
+        <section id="services" class="bloc">
+            <div class="bgServices"></div>
+            <div class="blocChild blocChild__services">
+                <h2 class="heading">NOS SERVICES</h2>
+                <div id="carouselServices" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item">
-                        <h3>Click & Collect</h3>
-                        <p>
-                            Avec notre système de click & collect, profitez de la commodité de commander à l'avance et de récupérer vos plats
-                            fraîchement préparés sans attendre. Que ce soit pour un déjeuner sur le pouce ou un dîner imrpovisé, notre service
-                            rapide et efficace vous garantit une expérience culinaire et sans tracas.
-                        </p>
-                        <button>Commander</button>
-                    </div>
-                    <div class="carousel-item">
-                        <h3>Commander en livraison</h3>
-                        <p>
-                            Ne laissez pas la faim vous guider, commandez dès maintenant et laissez-nous vous offrir une expérience culinaire 
-                            inoubliable, confortablement installé chez vous. Optez pour la simplicité et la qualité avec notre service de livraison, 
-                            la promesse d'un festin délicieux sans le moindre effort.
-                        </p>
-                        <button>Commander</button>
-                    </div>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-            </div>
-            <div class="test"></div>
-            <div class="hamburger"></div>
-            </div>
-        </section>
-
-        <section id="aPropos">
-            <p>APPRENEZ</p>
-            <h2>NOTRE HISTOIRE</h2>
-            <p>Ouvert depuis des années, nous mettons un point d'honneur à élaborer des plats faits maison à partir d'ingrédients de qualités <br>
-            De la cuisine au service, en passant par la vue inoubliable qu'offre la station d'Avoriaz, nous vous invitons à passer une expérience inoubliable.</p>
-            <button>En savoir plus</button>
-        </section>
-
-        <section id="notreEquipe">
-            <p>RENCONTREZ</p>
-            <h2>NOTRE ÉQUIPE</h2>
-            <div id="carouselEquipe" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselEquipe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselEquipe" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  </div>
-                <div class="carousel-inner">
-                    <div class="equipe Pépétte carousel-item active">
-                        <img src="./img/pepette.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>Pépette</h3>
-                            <h4>Diectrice d'établissement</h4>
-                            <q>Some representative placeholder content for the first slide.</q>
-                          </div>
-                    </div>
-                    <div class="equipe Dom carousel-item">
-                        <img src="./img/Dom.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>Dom</h3>
-                            <p>Chef de cuisine</p>
-                            <q>Some representative placeholder content for the first slide.</q>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>Réserver une table</h3>
+                            <p>
+                                Ne laissez rien au hasard, réservez dès maintenant et préparez-vous à vivre une expérience gastronomique mémorable
+                                dans une ambiance accueillante et conviviale. <br> Votre table vous attend pour vous faire découvrir les délices
+                                de notre cuisine et vous offrir un moment de partage et de plaisir.
+                            </p>
+                            <button>Voir le menu</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Click & Collect</h3>
+                            <p>
+                                Avec notre système de click & collect, profitez de la commodité de commander à l'avance et de récupérer vos plats
+                                fraîchement préparés sans attendre. Que ce soit pour un déjeuner sur le pouce ou un dîner imrpovisé, notre service
+                                rapide et efficace vous garantit une expérience culinaire et sans tracas.
+                            </p>
+                            <button>Commander</button>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Commander en livraison</h3>
+                            <p>
+                                Ne laissez pas la faim vous guider, commandez dès maintenant et laissez-nous vous offrir une expérience culinaire 
+                                inoubliable, confortablement installé chez vous. Optez pour la simplicité et la qualité avec notre service de livraison, 
+                                la promesse d'un festin délicieux sans le moindre effort.
+                            </p>
+                            <button>Commander</button>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipe" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselEquipe" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="palallax carrot"></div>
             </div>
         </section>
 
-        <section class="Nous contacter">
-            <h2>Contactez-nous</h2>
-            <form action="">
-                <label for="">Prénom</label>
-                <input type="text">
-                <label for="">Adresse mail</label>
-                <input type="text">
-                <label for="">Message</label>
-                <input type="text">
-                <button>Envoyer</button>
-            </form>
-            <ul>
-                <li>+33 6 06 06 06 06</li>
-                <li>contact@letraino.com</li>
-            </ul>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.9105543016876!2d6.7725500751217975!3d46.19233858456427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ea6518e47ed81%3A0xed4825f13650350a!2s39%20Prom.%20du%20Festival%2C%2074110%20Morzine!5e0!3m2!1sfr!2sfr!4v1721751774744!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="about" class="bloc">
+            <div class="blocChild">
+                <h2>NOTRE HISTOIRE</h2>
+                <p>Ouvert depuis des années, nous mettons un point d'honneur à élaborer des plats faits maison à partir d'ingrédients de qualités <br>
+                De la cuisine au service, en passant par la vue inoubliable qu'offre la station d'Avoriaz, nous vous invitons à passer une expérience inoubliable.</p>
+                <button>En savoir plus</button>
+            </div>
+            <div class="bg"></div>
+            <div class="parallax book"></div>
+        </section>
+
+        <section id="team" class="bloc">
+            <div class="blocChild">
+                <h2>NOTRE ÉQUIPE</h2>
+                <div id="carouselEquipe" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselEquipe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselEquipe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <div class="equipe Pépétte carousel-item active">
+                            <img src="./img/pepette.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Pépette</h3>
+                                <h4>Diectrice d'établissement</h4>
+                                <q>Some representative placeholder content for the first slide.</q>
+                              </div>
+                        </div>
+                        <div class="equipe Dom carousel-item">
+                            <img src="./img/Dom.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Dom</h3>
+                                <p>Chef de cuisine</p>
+                                <q>Some representative placeholder content for the first slide.</q>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipe" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEquipe" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="bg"></div>
+            <div class="parallax"></div>
         </section>
     </main>
 
     <footer>
-
+        <section class="bloc contact">
+            <div class="blocChild">
+                <h2>Contactez-nous</h2>
+                <form action="">
+                    <label for="">Prénom</label>
+                    <input type="text">
+                    <label for="">Adresse mail</label>
+                    <input type="text">
+                    <label for="">Message</label>
+                    <input type="text">
+                    <button>Envoyer</button>
+                </form>
+                <ul>
+                    <li>+33 6 06 06 06 06</li>
+                    <li>contact@letraino.com</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.9105543016876!2d6.7725500751217975!3d46.19233858456427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ea6518e47ed81%3A0xed4825f13650350a!2s39%20Prom.%20du%20Festival%2C%2074110%20Morzine!5e0!3m2!1sfr!2sfr!4v1721751774744!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            </div>
+            <div class="bg"></div>
+            <div class="parallax"></div>
+        </section>
     </footer>
 </body>
 </html>
